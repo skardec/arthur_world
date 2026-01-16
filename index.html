@@ -6,27 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    .site-title {
+  .site-title {
   width: 100%;
   text-align: center;
-  padding: 30px 15px 10px;
+  padding: 28px 15px 18px;
   background-color: #e9f7f7;
 }
 
 .site-title h1 {
-  font-size: 48px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* CHÁ DE RIFA */
+.titulo-rifa {
+  font-size: 34px;
   font-weight: 800;
-  color: #00bcd4; /* azul brilhante */
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  color: #00bfe6; /* azul mais vivo */
   text-transform: uppercase;
-  line-height: 1.2;
+}
+
+/* ARTHUR */
+.titulo-nome {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  /* sombra escura para destaque */
+  text-shadow:
+    0 2px 4px rgba(0,0,0,0.45),
+    0 4px 10px rgba(0,0,0,0.35);
 }
 
 @media (max-width: 600px) {
-  .site-title h1 {
-    font-size: 34px;
+  .titulo-rifa {
+    font-size: 26px;
+  }
+  .titulo-nome {
+    font-size: 38px;
   }
 }
+
 
     * {
       margin: 0;
@@ -142,9 +165,13 @@
 
 
 <body>
-    <!-- TÍTULO PRINCIPAL -->
+  
+<!-- TÍTULO PRINCIPAL -->
 <div class="site-title">
-  <h1>CHÁ DE RIFA<br>ARTHUR</h1>
+  <h1>
+    <span class="titulo-rifa">CHÁ DE RIFA</span><br>
+    <span class="titulo-nome">ARTHUR</span>
+  </h1>
 </div>
   
 
