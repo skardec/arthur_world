@@ -66,96 +66,47 @@
 
     /* ====== TOPO / CAPA ====== */
     .header {
-      background: url("capa_arthur1.png") no-repeat center top;
-      background-size: cover;
-      min-height: 380px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      padding-bottom: 30px;
+      position: relative;
     }
 
-    .menu {
-      background: #2fc4bd;
-      padding: 12px 20px;
-      border-radius: 8px;
-      display: flex;
-      gap: 20px;
+    .title-overlay {
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      z-index: 10;
+      background: none;
+      padding: 0;
+      pointer-events: none;
     }
 
-    .menu a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
+    .titulo-rifa {
+      display: block;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: #00cfff;
       text-transform: uppercase;
     }
 
-    .menu a:hover {
-      text-decoration: underline;
-    }
-
-    /* ====== CONTEÚDO ====== */
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    .title {
-      font-size: 28px;
-      color: #18b5ad;
-      margin-bottom: 20px;
-    }
-
-    .text {
-      font-size: 16px;
-      margin-bottom: 18px;
-    }
-
-    /* ====== BOTÕES ====== */
-    .buttons {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .btn {
-      background-color: #2fc4bd;
+    .titulo-nome {
+      display: block;
+      font-size: 56px;
+      font-weight: 900;
+      letter-spacing: 4px;
       color: #ffffff;
-      padding: 14px 26px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      text-transform: uppercase;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #23aaa4;
-    }
-
-    /* ====== RODAPÉ ====== */
-    footer {
-      margin-top: 60px;
-      padding: 30px 20px;
-      background-color: #ffffff;
-      text-align: center;
-      font-size: 14px;
-      color: #777;
+      text-shadow:
+        0 3px 6px rgba(0,0,0,0.6),
+        0 6px 14px rgba(0,0,0,0.45);
     }
 
     @media (max-width: 600px) {
-      .title {
+      .titulo-rifa {
         font-size: 22px;
       }
-      .text {
-        font-size: 15px;
+      .titulo-nome {
+        font-size: 38px;
       }
     }
   </style>
